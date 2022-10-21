@@ -13,10 +13,10 @@ export default function Home({ services }) {
   return (
     <div>
       <Head>
-        <title>All Landscaping Services, LLC | Landscaping in Westminster, MD</title>
+        <title>GREENPOWER Landscaping | Virginia Lawn & Landscaping Services</title>
         <meta
           name="description"
-          content="Commercial and Residential Landscaping. Proudly serving Westminster, Maryland and surrounding regions. "
+          content="Commercial and Residential Landscaping in Virginia "
         />
       </Head>
       <Intro />

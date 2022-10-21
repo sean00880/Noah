@@ -2,16 +2,15 @@ import style from "../styles/Testimonials.module.css";
 import Image from "next/image";
 import Circle from "./Circle";
 import { users } from "../data";
-import Flip from "react-reveal/Flip"
+import Pulse from "react-reveal/Pulse"
 
 const Testimonials = () => {
   return (
     <div className={style.container} id='testimonials'>
-      <Circle top="-70vh" left="0" right="0" backgroundColor="darkblue" />
       <h2 className={style.title}>Testimonials</h2>
-        <Flip top>
-        <h1 className={style.subtitle}>What Others Have To Say About<hr></hr>All Landscaping Services, LLC</h1>
-        </Flip>
+        <Pulse>
+        <h1 className={style.subtitle}>What Our Customers Say<hr></hr>GREENPOWER Landscaping Services, LLC</h1>
+        </Pulse>
       <div className={style.wrapper}>
         {users.map((user) => (
           <div className={style.card} key={user.id}>

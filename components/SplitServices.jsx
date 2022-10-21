@@ -1,16 +1,16 @@
 import style from "../styles/Services.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Flip from "react-reveal/Flip"
+import Pulse from "react-reveal/Pulse"
 
 const Services = ({ services }) => {
   return (
     <div className={style.container} id='services'>
       <div className={style.info}>
         <h2 className={style.title}>Services</h2>
-        <Flip top>
+        <Pulse>
         <h1 className={style.subtitle}>All Landscaping Services <hr></hr>Marlyand </h1>
-        </Flip>
+        </Pulse>
 
         <hr className={style.hr}/>
 

@@ -1,11 +1,15 @@
 .container {
-  height: 250px;
-  border-top: 3px solid black;
+  border-top: 3px solid #cdcdcd;
+  display: -moz-box;
   display: flex;
+  -moz-box-align: center;
   align-items: center;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 21px;
   padding: 20px;
+  background: #101010;
+  color: rgba(225, 225, 225, 0.65);
+  height: 33vh;
 }
 
 .title {
@@ -50,14 +54,24 @@
   flex: 1;
 }
 
+.logo{
+  border-radius: 50%;
+}
+
 .cardS {
   flex: 1;
+  background-color: rgb(39, 38, 38);
+  padding: 30px;
+  border:3px solid rgb(163, 163, 163);
+  margin: 10px;
+  border-radius: 30px;
 }
 
 .cardItem {
   font-size: 14px;
   margin-bottom: 20px;
   text-align: right;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,7 +83,6 @@
   .title,
   .linkTitle {
     font-size: 20px;
-    padding: 0;
   }
 
   .cardItem{

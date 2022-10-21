@@ -10,14 +10,16 @@
   background: rgba(255, 255, 255, 0.331);
   border-top: 3px solid rgb(110, 48, 35);
   border-bottom: 3px solid rgba(81, 89, 78, 0.879);
+  padding: 0 20px;
 }
 
 .title {
+  
   font-size: 30px;
   border-bottom: 4px solid rgb(14, 14, 14);
   text-align: center;
   padding: 0px 100px;
-  color: rgba(31, 188, 55, 0.785);
+  color: rgb(226, 227, 224);
 }
 
 .hr{
@@ -32,8 +34,9 @@
   text-align: center;
   letter-spacing: 4px;
   font-size: 34px;
-  border-radius: 10px;
+  border-radius: 27% 0px;
   color: rgb(22, 75, 35);
+  width:100%;
 }
 
 
@@ -42,7 +45,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background-image: url('https://i.ibb.co/hBZQcbX/Asset-2-1.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,7 +53,7 @@
 }
 
 .card {
-  width: 30%;
+  width: 100%;
   background-color: rgb(31, 29, 29);
   color: white;
   padding: 10px;

@@ -3,6 +3,8 @@ import style from "../../styles/Product.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
 const Product = ({ product }) => {
   return (
@@ -14,20 +16,21 @@ const Product = ({ product }) => {
           content="Web Design, App Development, Content Creation Agency Near NY"
         />
       </Head>
-      <div className={style.cardS}>
-        <h1 className={style.title}>{product.title} | Westminster, Maryland</h1>
-        <hr />
-        <p className={style.desc}>{product.longDesc}</p>
-        <button className={style.button}>
-          <Link href="/contact">Request Your Free Quote</Link>
-        </button>
-      </div>
+
       <div className={style.cardL}>
         {product.images.map((img) => (
           <div key={img.id} className={style.imgContainer}>
             <Image src={img.url} layout="fill" objectFit="cover" alt="" />
           </div>
         ))}
+      </div>
+      <div className={style.cardS}><Image src={product.photo} width={100} height={100}/>
+        <h1 className={style.title}>{product.title} | Westminster, Maryland</h1>
+        <hr />
+        <p className={style.desc}>{product.longDesc}</p>
+        <button className={style.button}>
+          <Link href="/contact">Request Your Free Quote</Link>
+        </button>
       </div>
 
     </div>

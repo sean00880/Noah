@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={style.container}>
       <div className={style.cardL}>
-        <h1 className={style.title}><Image width={90} height={90} src="https://i.ibb.co/hBZQcbX/Asset-2-1.png" className={style.logo} priority={true}></Image>All Landscaping Services, LLC</h1>
+        <h1 className={style.title}><Image width={90} height={90} src="https://i.ibb.co/gSx5mH1/GPlogo.png" className={style.logo}></Image>GREENPOWER Landscaping, LLC</h1>
         <h1 className={style.linkTitle}>
           <Link href="/contact" className={style.link} passHref>
             <>
@@ -32,14 +32,14 @@ const Footer = () => {
           <a href='https://www.decodedweb.us/' >https://www.decodedweb.us/</a>
         </div>
         <div className={style.cardItem}>
-          alllandscapingservicesllc@gmail.com
+          developer@decodedweb.us
           <br /> 000-000-0000
         </div>
       </div>
       <div className={style.cardS}>
 
         <div className={style.cardItem}>
-          © 2022 All Landscaping Services
+          © 2022 Decoded Web | Web Development Services
           <br />
           ALL RIGHTS RESERVED
         </div>

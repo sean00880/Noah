@@ -9,8 +9,9 @@ const Navbar = () => {
   return (
     <div className={style.container}>
       
-      <div><Image width={90} height={90} src="https://i.ibb.co/hBZQcbX/Asset-2-1.png" className={style.logo} priority={true}></Image><span>All </span><Link href="/" className='home'>Landscaping Services</Link>, LLC</div>
-      <Image src='https://i.ibb.co/b5phqVt/stars.png' width='150' height='30'></Image>
+      <div className={style.imgwrapper}><Image width={90} height={90} src="https://i.ibb.co/gSx5mH1/GPlogo.png" className={style.logo} priority={true}></Image><li><Link href="/" className='home'><div><span>GREENPOWER </span>Landscaping</div></Link></li></div>
+     
+     <div className={style.starswrapper}><Image src='https://i.ibb.co/b5phqVt/stars.png' width='150' height='30'></Image></div> 
       <ul className={style.list}>
         
         <li className={style.listItem}>
@@ -22,7 +23,7 @@ const Navbar = () => {
         <li className={style.listItem}>
           <Link href="/#testimonials">Testimonials</Link>
         </li>
-        <hr></hr>
+        <hr className={style.hr}></hr>
         <li className={style.listItem}>
           <Link href="/#faq">FAQ</Link>
         </li>
@@ -33,7 +34,7 @@ const Navbar = () => {
           <Link href="/contact">Contact</Link>
         </li>
         <li className={style.listItem2}>
-          <Link href="tel:4435479685">(443) 547-9685</Link>
+          <Link href="tel:(571)292-6124"> (000) 000-0000</Link>
         </li>
       </ul>
       <div className={style.hamburger} onClick={() => setOpen(!open)}>
@@ -43,13 +44,13 @@ const Navbar = () => {
       </div>
       <ul onClick={()=>setOpen(false)} className={style.menu} style={{ right: open ? "0px" : "-100vw" }}>
         <li className={style.menuItem}>
-          <Link href="/"></Link>
+          <Link href="/">Home</Link>
         </li>
         <li className={style.menuItem}>
           <Link href="/#about">ABOUT</Link>
         </li>
         <li className={style.menuItem}>
-          <Link href="/allservices">SERVICES</Link>
+          <Link href="/allservices#services">SERVICES</Link>
         </li>
         <li className={style.menuItem}>
           <Link href="/#testimonials">TESTIMONIALS</Link>

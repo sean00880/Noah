@@ -1,10 +1,9 @@
-import style from "../styles/Services.module.css";
+import style from "../styles/LawnServices.module.css";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Pulse from "react-reveal/Pulse"
 import ReactCardFlip from "react-card-flip";
-import { startTransition } from "react";
 
 
 const CardStyle = {
@@ -13,7 +12,6 @@ const CardStyle = {
   marginBottom:"10px",
   borderRadius: "40px 30px 30px 10px"
 };
-
 
 const Services = ({ services }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -24,12 +22,55 @@ const Services = ({ services }) => {
       <div className={style.info}>
         <h2 className={style.title}>Services</h2>
         <Pulse>
-        <h1 className={style.subtitle}>Your Preferred Landscaping Company <hr></hr>Serving Northern Virginia </h1>
+        <h1 className={style.subtitle}>Our Lawn Services <hr></hr>Northern Virginia </h1>
         </Pulse>
 
         <hr className={style.hr}/>
 
-        <h4 className={style.text}>We strive to build valuable relationships with our clients and deliver exceptional landscaping services on a routinely basis.</h4>
+        <div className={style.desc}><Image src='https://i.ibb.co/pd7DXKL/lawnals.png' width="400px" height="400px" objectFit="cover"></Image>
+        <h4 className={style.text}>We use cutting-edge equipment when executing our lawn and tree maintanance operations. To ensure the safest and best cut possible, our mowers undergo routine maintenance. <hr /> Our primary landscaping services include: Mowing, mulching, edging/pruning, seeding and fertilizing, flower/tree planting as well as full lawn restoration and season clean-ups. <hr/> We also offer tree, shrub and leaf removal services.</h4> 
+        </div>
+        <div className={style.card_wrapper}>
+        
+        
+        </div>
+        <div className={style.services}>
+          {services.map((service) => (
+            <Link key={service.id} href={`/services/${service.name}`} passHref>
+              <div className={style.service}>
+             
+                <span className={style.cat}>{service.title} <hr className={service.hr}/></span>
+                
+                <div className={style.media}>
+               
+                  {service.video ? (
+                    <video
+                      className={style.video}
+                      src={`/img/${service.video}`}
+                      autoPlay
+                      loop
+                    />
+                  ) : (
+                    <Image
+                      src={service.photo}
+                      width="100px"
+                      height="100px"
+                      layout="responsive"
+                      objectFit="cover"
+                      alt=""
+                      loading="lazy"
+                    />
+                  )}
+              
+                  
+                </div>
+              
+                <div className={style.catInfo}><h3>{service.desc}</h3></div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <h1> Not sure? Check out all of our services:</h1>
         <div className={style.card_wrapper}>
         <ReactCardFlip style={style.card} isFlipped={isFlipped} flipDiection="horizontal">
       <div
@@ -93,44 +134,10 @@ const Services = ({ services }) => {
           <Link href="/other" passHref><button className={style.readMore}>Other Services</button></Link>
         </div>
         </ReactCardFlip>
-        
+        <div className={style.Links}>
+          
+          <Link href='/services'><span>All Services</span></Link>
         </div>
-        <hr />
-        <div className={style.services}>
-          {services.map((service) => (
-            <Link key={service.id} href={`/services/${service.name}`} passHref>
-              <div className={style.service}>
-             
-                <span className={style.cat}>{service.title} <hr className={service.hr}/></span>
-                
-                <div className={style.media}>
-               
-                  {service.video ? (
-                    <video
-                      className={style.video}
-                      src={`/img/${service.video}`}
-                      autoPlay
-                      loop
-                    />
-                  ) : (
-                    <Image
-                      src={service.photo}
-                      width="100px"
-                      height="100px"
-                      layout="responsive"
-                      objectFit="cover"
-                      alt=""
-                      loading="lazy"
-                    />
-                  )}
-              
-                  
-                </div>
-              
-                <div className={style.catInfo}><h3>{service.desc}</h3></div>
-              </div>
-            </Link>
-          ))}
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Data } from "../data";
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import style from "../styles/Faq.module.css";
-import Flip from 'react-reveal/Flip';
+import Pulse from "react-reveal/Pulse"
 
 
 const Accordion = () => {
@@ -22,9 +22,9 @@ const Accordion = () => {
     <IconContext.Provider value={{ color: '#00FFB9', size: '25px' }}>
         <div className={style.container} id="faq">
         <h2 className={style.title}>FaQ</h2>
-        <Flip top>
+        <Pulse>
         <h1 className={style.subtitle}>Commonly asked questions</h1>
-        </Flip>
+        </Pulse>
       <div className={style.wrapper}>
           {Data.map((item, index) => {
             return (

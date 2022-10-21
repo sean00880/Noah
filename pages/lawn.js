@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Services from "../components/Services";
-import { data } from "../data";
-import About from "../components/AboutServices";
+import Image from "next/image";
+import LawnServices from "../components/LawnServices";
+
+import { lawndata } from "../data";
+
 
 export default function Home({ services }) {
   return (
@@ -10,17 +12,16 @@ export default function Home({ services }) {
         <title>GREENPOWER Landscaping | Virginia Lawn & Landscaping Services</title>
         <meta
           name="description"
-          content="Commercial and Residential Landscaping. Proudly serving Westminster, Maryland and surrounding regions. "
+          content="Lawn Services in Virginia "
         />
       </Head>
-      <About />
-      <Services services={services} />
+      <LawnServices services={services} />
     </div>
   );
 }
 
 export const getStaticProps = () => {
-  const services = data;
+  const services = lawndata;
   return {
     props: { services },
   };

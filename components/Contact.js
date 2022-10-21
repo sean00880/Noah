@@ -1,17 +1,18 @@
 import Circle from "./Circle";
 import style from "../styles/Contact.module.css";
-import Flip from 'react-reveal/Flip';
+import Pulse from "react-reveal/Pulse"
+import Flip from "react-reveal/Flip"
 
 const Contact = () => {
   return (
     <div className={style.container}>
-      <div>
+      <div className={style.wrapper}>
         <Circle backgroundColor="green" left="-40vh" top="-20vh" className={style.circle}/>
         <Circle backgroundColor="yellow" right="-30vh" bottom="-60vh" className={style.circle}/>
         <h2 className={style.title}>Contact</h2>
-        <Flip top>
-        <h1 className={style.subtitle}>Get Your Free Estimate<hr></hr>All Landscaping Services, LLC</h1>
-        </Flip>
+        <Pulse>
+        <h1 className={style.subtitle}>Get Your Free Estimate<hr></hr>GREENPOWER Landscaping, LLC</h1>
+        </Pulse>
       <form className={style.form}>
         <input className={style.inputS} type="text" placeholder="Name" />
         <input className={style.inputS} type="text" placeholder="Phone" />
@@ -28,8 +29,8 @@ const Contact = () => {
       <div >
         <Flip right>
           <h3 className={style.contactInfo}>
-        Email: alllandscapingservicesllc@gmail.com <br/>
-        Phone: (443) 547-9685
+        Email: services@greenpowerlandscapes.com <br/>
+        Phone: (000) 000-0000
         </h3>
         </Flip>
       </div>
