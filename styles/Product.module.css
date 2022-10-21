@@ -16,7 +16,7 @@
 
 .title span{
   font-size:18px;
-  color:rgb(27, 27, 27);
+  color:rgb(224, 224, 224);
 }
 
 .cardS {
@@ -79,6 +79,10 @@
   align-items: center;
   justify-content: center;
   margin: 30px 100px;
+}
+
+.subtitle {
+  color: white;
 }
 
 .button:hover{

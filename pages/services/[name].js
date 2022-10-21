@@ -32,7 +32,7 @@ const Product = ({ product }) => {
       <div className={style.cardImage}>
       <Image src={product.photo} className={style.photo} width={100} height={100} />
         </div>
-        <h1 className={style.title}>{product.title} <span>| Service in Virginia |</span></h1>
+        <h1 className={style.title}>{product.title} <span className={style.subtitle}>| Service in Virginia |</span></h1>
         
         
        
