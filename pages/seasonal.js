@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import InstallServices from "../components/InstallServices";
 
-import { installationdata } from "../data";
+import { data2 } from "../data";
 
 
 export default function Home({ services }) {
@@ -21,7 +21,7 @@ export default function Home({ services }) {
 }
 
 export const getStaticProps = () => {
-  const services = installationdata;
+  const services = data2;
   return {
     props: { services },
   };

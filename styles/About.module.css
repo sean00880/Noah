@@ -106,17 +106,20 @@
 
 .imageWrapper{
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: space-around;
 }
 
 
 .title {
   font-size: 30px;
-  border-bottom: 4px solid green;
+  border-bottom: 4px solid rgb(220, 223, 220);
   text-align: center;
   padding: 0px 100px;
-  color: rgb(20, 19, 19);
+  color: rgb(238, 238, 238);
+  background-color: #416440;
+  border-radius: 4px;
+  line-height: 2;
 }
 
 .imagediv{
@@ -141,7 +144,7 @@
   text-indent: 40px;
   line-height: 3;
   padding: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .services {
@@ -219,12 +222,12 @@
 }
 .subtitle{
   line-height: 3;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid rgb(232, 235, 232);
   text-align: left;
   letter-spacing: 4px;
   font-size: 34px;
   border-radius: 3px;
-  color: rgba(0, 0, 0, 0.781);
+  color: rgba(236, 236, 236, 0.938);
   margin: 7vh 0px;
 }
 .subtitle2{
@@ -234,7 +237,7 @@
   letter-spacing: 4px;
   font-size: 34px;
   border-radius: 3px;
-  color: rgba(0, 0, 0, 0.781);
+  color: rgba(238, 238, 238, 0.945);
   margin: 7vh 0px;
 }
 

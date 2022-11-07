@@ -35,7 +35,7 @@ const About = () => {
         <Slide left>
         <div className={style.imagediv}>
 
-        <h4 className={style.text}>GREENPOWER Landscaping was created by [XXXX]. Over the last 5 years, we have provided professional landscaping services to hundreds of commercial and resicential clients in the state of Virginia. </h4>
+        <h4 className={style.text}>Noah's Landscaping was founded in year [XXXX]. Over the last [x] years, we have provided professional landscaping services to hundreds of commercial and resicential clients in Iowa. </h4>
       
         <Image src='https://i.ibb.co/xMb27Dv/jjlandscapers.jpg' height='300vh' width='300vh' className={style.image}/>
         </div>

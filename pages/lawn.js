@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import LawnServices from "../components/LawnServices";
 
-import { lawndata } from "../data";
+import { data } from "../data";
 
 
 export default function Home({ services }) {
@@ -21,7 +21,7 @@ export default function Home({ services }) {
 }
 
 export const getStaticProps = () => {
-  const services = lawndata;
+  const services = data;
   return {
     props: { services },
   };

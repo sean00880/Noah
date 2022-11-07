@@ -1,4 +1,4 @@
-import { data } from "../../data";
+import { datalist } from "../../data";
 import style from "../../styles/Product.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -50,7 +50,7 @@ const Product = ({ product }) => {
 };
 
 export const getStaticPaths = async () => {
-  const products = data;
+  const products = datalist;
   const paths = products.map((item) => {
     return {
       params: { name: item.name },
@@ -64,7 +64,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (ctx) => {
   const name = ctx.params.name;
-  const product = data.filter((item) => item.name === name)[0];
+  const product = datalist.filter((item) => item.name === name)[0];
   return {
     props: { product },
   };

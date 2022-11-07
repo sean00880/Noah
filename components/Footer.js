@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={style.container}>
       <div className={style.cardL}>
-        <h1 className={style.title}><Image width={90} height={90} src="https://i.ibb.co/gSx5mH1/GPlogo.png" className={style.logo}></Image>GREENPOWER Landscaping, LLC</h1>
+        <h1 className={style.title}><Image width={90} height={90} src="https://i.ibb.co/Ydb8xJh/noahlogo.png" className={style.logo}></Image>Noah's Lawncare</h1>
         <h1 className={style.linkTitle}>
           <Link href="/contact" className={style.link} passHref>
             <>

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import OtherServices from "../components/OtherServices";
 
-import { otherdata } from "../data";
+import { data3 } from "../data";
 
 
 export default function Home({ services }) {
@@ -21,7 +21,7 @@ export default function Home({ services }) {
 }
 
 export const getStaticProps = () => {
-  const services = otherdata;
+  const services = data3;
   return {
     props: { services },
   };

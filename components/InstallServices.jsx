@@ -103,7 +103,7 @@ const Services = ({ services }) => {
       >
         Installation & Repairs | Virginia   
         <hr className={style.hr}/>
-        <Image src='https://i.ibb.co/HFcvyv2/installation.png' width={300} height={300}></Image>
+        <Image src='https://i.ibb.co/H4mNzx4/guttercleaning.jpg' width={300} height={300}></Image>
       
       
       
