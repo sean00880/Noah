@@ -39,7 +39,7 @@ const Services = ({ services }) => {
         
       >
          
-        Lawn Care | Virginia   
+        Lawn Care | Iowa   
         <hr className={style.hr}/>
         <Image src='https://i.ibb.co/pd7DXKL/lawnals.png' width={300} height={300}></Image>
          
@@ -60,7 +60,7 @@ const Services = ({ services }) => {
         onMouseEnter={() => setIsFlipped2((prev) => !prev)}
         className={style.cardFront}
       >
-        Other Services | Virginia   
+        Other Services | Iowa   
         <hr className={style.hr}/>
         <Image src='https://i.ibb.co/H4mNzx4/guttercleaning.jpg' width={300} height={300}></Image>
       
@@ -81,7 +81,7 @@ const Services = ({ services }) => {
         onMouseEnter={() => setIsFlipped3((prev) => !prev)}
         className={style.cardFront}
       >  
-         Seasonal Services | Virginia   
+         Seasonal Services | Iowa   
         <hr className={style.hr}/>
          <Image src='https://i.ibb.co/7pPw8BK/snow.png' width={300} height={300}></Image>  
 

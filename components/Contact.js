@@ -11,7 +11,7 @@ const Contact = () => {
         <Circle backgroundColor="yellow" right="-30vh" bottom="-60vh" className={style.circle}/>
         <h2 className={style.title}>Contact</h2>
         <Pulse>
-        <h1 className={style.subtitle}>Get Your Free Estimate<hr></hr>GREENPOWER Landscaping, LLC</h1>
+        <h1 className={style.subtitle}>Get Your Free Estimate<hr></hr>Noah's Lawncare</h1>
         </Pulse>
       <form className={style.form}>
         <input className={style.inputS} type="text" placeholder="Name" />

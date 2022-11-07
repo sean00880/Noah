@@ -40,7 +40,6 @@ const About = () => {
         <Image src='https://i.ibb.co/xMb27Dv/jjlandscapers.jpg' height='300vh' width='300vh' className={style.image}/>
         </div>
         </Slide>
-        <hr></hr>
         <Slide right>
         <h4 className={style.text}>We strive to build valuable relationships with our clients and deliver a wide variety of exceptional services on a routinely basis. Our key values are: Honesty, Trust, Teamwork & Kindness. </h4>
 

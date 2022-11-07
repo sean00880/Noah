@@ -9,7 +9,7 @@ const Testimonials = () => {
     <div className={style.container} id='testimonials'>
       <h2 className={style.title}>Testimonials</h2>
         <Pulse>
-        <h1 className={style.subtitle}>What Our Customers Say<hr></hr>GREENPOWER Landscaping Services, LLC</h1>
+        <h1 className={style.subtitle}>What Our Customers Say<hr></hr>Noah's Lawncare</h1>
         </Pulse>
       <div className={style.wrapper}>
         {users.map((user) => (
