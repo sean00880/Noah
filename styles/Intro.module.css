@@ -204,7 +204,7 @@
   border: 2px solid rgba(35, 34, 34, 0.861);
   border-radius: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 @keyframes button {

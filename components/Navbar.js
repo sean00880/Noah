@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className={style.container}>
       
-      <div className={style.imgwrapper}><Image width={90} height={90} src="https://i.ibb.co/Ydb8xJh/noahlogo.png" className={style.logo} priority={true}></Image><li><Link href="/" className='home'><div><span>Noah's </span>Lawncare</div></Link></li></div>
+      <div className={style.imgwrapper}><Image width={90} height={90} src="https://i.ibb.co/Ydb8xJh/noahlogo.png" className={style.logo} priority={true}></Image><Link href="/" className='home'><div><span>Noah's </span>Lawncare</div></Link></div>
      
      <div className={style.starswrapper}><Image src='https://i.ibb.co/b5phqVt/stars.png' width='150' height='30'></Image></div> 
       <ul className={style.list}>

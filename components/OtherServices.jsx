@@ -76,7 +76,7 @@ const Services = ({ services }) => {
         
       >
          
-        Lawn Care | Virginia   
+        Lawn Care | Iowa   
         <hr className={style.hr}/>
         <Image src='https://i.ibb.co/pd7DXKL/lawnals.png' width={300} height={300}></Image>
          
@@ -97,7 +97,7 @@ const Services = ({ services }) => {
         onMouseEnter={() => setIsFlipped2((prev) => !prev)}
         className={style.cardFront}
       >
-        Installation & Repairs | Virginia   
+        Other Services | Iowa   
         <hr className={style.hr}/>
         <Image src='https://i.ibb.co/H4mNzx4/guttercleaning.jpg' width={300} height={300}></Image>
       
@@ -108,7 +108,7 @@ const Services = ({ services }) => {
         <div
         style={CardStyle}
         onMouseLeave={() => setIsFlipped2((prev) => !prev)} className={style.cardBack}>
-          GREENPOWER Landscaping provides installation and removal services to guarantee that your property is in its best shape. Check out our services for sod installation, weed removal, and tree/leaf removal.
+          Noah's Lawncare provides a diverse set of landscaping services to guarantee that your property is in its best shape. We offer: Fertilizing, Gutter Cleaning, Mulch Bed Installation, and Weed Removal.
           <Link href="/install" passHref><button className={style.readMore}>Installation/Removal Services</button></Link>
         </div>
         </ReactCardFlip>
@@ -118,7 +118,7 @@ const Services = ({ services }) => {
         onMouseEnter={() => setIsFlipped3((prev) => !prev)}
         className={style.cardFront}
       >  
-         Seasonal & Other Services | Virginia   
+         Seasonal Services | Iowa   
         <hr className={style.hr}/>
          <Image src='https://i.ibb.co/7pPw8BK/snow.png' width={300} height={300}></Image>  
 
@@ -126,7 +126,7 @@ const Services = ({ services }) => {
         <div
         style={CardStyle}
         onMouseLeave={() => setIsFlipped3((prev) => !prev)} className={style.cardBack}>
-          We offer our customers landscaping services all year long. We are available to help with leaf cleanup in the fall and snow removal in the winter in addition to preserving the aesthetic of your landscape in the spring and summer.
+          We offer our customers landscaping services all year long. We are available to help with leaf cleanup in the Spring and Fall and snow management services in the winter.
           <Link href="/other" passHref><button className={style.readMore}>Other Services</button></Link>
         </div>
         </ReactCardFlip>

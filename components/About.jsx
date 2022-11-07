@@ -60,7 +60,6 @@ const About = () => {
           <Slide left>
         <h4 className={style.text}>We cater to landscaping needs for both commercial and residential properties. Our vast list of services goes beyond lawncare. We offer planting, seeding, fertilizing, hardscaping, mowing, mulching, trimming, leaf removal, snow removal, and much more. We also offer driveway and flowerbed installation. With a broad range of expertise, we are equipped to complete any assignment with the utmost quality and craftsmanship.</h4>
         </Slide>
-        <hr></hr>
         <Slide right>
         <h4 className={style.text}> Licensed, insured, and with qualified staff who are familiar with both our clients and our job. Contact us right away for a free quote. </h4>
         </Slide>
